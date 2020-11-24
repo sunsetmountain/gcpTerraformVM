@@ -1,6 +1,6 @@
 # Specify the provider (GCP, AWS, Azure)
 provider "google" {
 credentials = "${file("credentials.json")}"
-project = "ac-shared-playground"
+project = "update-project-name-here"
 region = "us-central1"
 }
