@@ -17,12 +17,14 @@ Use the Editor to change...
 Return to the command line mode...
 
 export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
+
 terraform init
+
 terraform plan
 
 -- check to make sure things look right --
 
-terraform build
+terraform apply
 
 -- see that your VM was properly created --
 
