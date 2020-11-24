@@ -1,6 +1,6 @@
 # gcpTerraformVM
 
-From the GCP Cloud Console command line...
+Within a new project, from the GCP Cloud Console command line...
 
 1. git clone https://github.com/sunsetmountain/gcpTerraformVM
 2. cd gcpTerraformVM
