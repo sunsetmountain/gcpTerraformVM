@@ -1,18 +1,20 @@
 # gcpTerraformVM
 
-Within a new project, from the GCP Cloud Console command line...
+Within a new project, use the GCP Cloud GUI to create a service account (e.g. terraform-access) and specify the compute admin role. Then, download the generated JSON file and rename it credentials.json.
 
-1. git clone https://github.com/sunsetmountain/gcpTerraformVM
-2. cd gcpTerraformVM
+From the GCP Cloud Console command line...
 
-From the GCP Cloud GUI, create a service account (e.g. terraform-access) and specify the compute admin role. Then, download the generated JSON file, rename it credentials.json, and save it to your project’s directory (cloned above).
+1. Upload the JSON file.
+2. git clone https://github.com/sunsetmountain/gcpTerraformVM
+3. mv credentials.json gcpTerraformVM/
+4. cd gcpTerraformVM
 
-Back in the GCP Cloud Console, use the Editor to change...
+Use the Editor to change...
 
 1. In provider.tf, update the project name to match your existing project
 2. In createVM.tf, change the machine name and type if desired
 
-From the GCP Cloud Console command line...
+Return to the command line mode...
 
 export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
 terraform init
