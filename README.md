@@ -14,6 +14,7 @@ Back in the GCP Cloud Console, use the Editor to change...
 
 From the GCP Cloud Console command line...
 
+export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
 terraform init
 terraform plan
 
